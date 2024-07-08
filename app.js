@@ -11,7 +11,7 @@ function searchcountry(){
     .then(data=>{
         data.forEach(obj=>{
             console.log(obj);
-            name.innerText = obj.name.common;
+            name.innerText = obj.name.official;
             flag.innerHTML = `<img class="rounded-5 shadow" src = "${obj.flags.png}" >`
             capital.innerHTML = obj.capital.Array[0];
         })
